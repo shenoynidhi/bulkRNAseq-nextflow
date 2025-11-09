@@ -1,0 +1,11 @@
+work/
+results/align/
+results/fastq/
+results/fastqc/
+results/multiqc/
+results/prefetch/
+results/processed_data/
+results/read_counts/
+results/trim/
+.nextflow/
+.nextflow.log*
