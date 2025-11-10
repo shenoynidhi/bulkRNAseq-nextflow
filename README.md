@@ -33,17 +33,18 @@ This pipeline performs the complete RNA-Seq analysis workflow, including:
 ## Environment Setup before execution
 Depending on the process, Nextflow automatically chooses Docker or Conda environment for the download of tools/packages. Hence setting up both is a prerequisite
 
-1. Conda Setup<br>
+1. **Conda Setup**<br>
 Some modules (`download`, `convert_fastq`, `trimming`, `align`, `count_matrix` ) run with Conda. [Refer documention for installation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)<br>
 To recreate the environment for DEA module, do as follows:
 ```
 conda env create -f envs/rnaseq_deseq2.yaml
 conda activate rnaseq_deseq2
 ```
-2. Docker Setup<br>
+2. **Docker Setup**<br>
 Other modules (`fastqc`, `multiqc`, `count_reads`) are executed inside Docker containers. For installation, can refer- [Docker Installation Guide](https://dev.to/abhay_yt_52a8e72b213be229/how-to-install-docker-on-windows-macos-and-linux-a-step-by-step-guide-3a2i)
 
-**Note:** Ensure docker.enabled and conda.enabled is set to true in the `nextflow.config` file
+**Note:** 
+- Ensure docker.enabled and conda.enabled is set to true in the `nextflow.config` file
 ---
 ## Reference Files Required
 Before running the workflow, download the following into the `data/` directory:
