@@ -13,7 +13,7 @@ include { DEA } from './modules/DEA_analysis.nf'
 
 params.SRA_input='data/SRA_runs.csv'
 params.sample_map='data/sample_map.csv'
-params.genome_dir="/mnt/d/bulkRNAseq-nextflow/data/grch38"
+params.genome_dir="./data/grch38"
 params.genome_prefix = 'genome'
 params.annotation_file="data/gencode.v48.primary_assembly.annotation.gtf"
 params.count_matrix_script="scripts/generating_matrix.py"

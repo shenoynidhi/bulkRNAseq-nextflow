@@ -2,7 +2,7 @@
 
 process DEA{
 
-    conda '/mnt/d/bulkRNAseq-nextflow/envs/rnaseq_deseq2.yaml'
+    conda './envs/rnaseq_deseq2.yaml'
 
     publishDir "results/DEA", mode:'copy'
 
